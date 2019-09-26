@@ -1,5 +1,5 @@
 [package]
-name = "nilslof-chess"
+name = "nilslofchess"
 version = "0.1.0"
 authors = ["Nils"]
 edition = "2018"
