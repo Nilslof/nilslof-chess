@@ -747,8 +747,6 @@ impl Game {
 
         let mut colour = self.board[file][rank].unwrap().colour;
 
-        println!("Getting strait direction for colour: {}", colour);
-
         straight_direction_moves
             .append(&mut self.get_single_direction_straight_moves(colour, file, rank, 1));
         straight_direction_moves
@@ -805,6 +803,10 @@ impl Piece {
             piece_type,
             has_moved: false,
         }
+    }
+
+    pub fn get_colour(&self) -> Colour {
+        self.colour
     }
 }
 
