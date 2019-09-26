@@ -48,6 +48,10 @@ mod game {
 
         assert_eq!(move_one.0, MoveType::Normal);
         assert_eq!(move_one.1, 0);
-        assert_eq!(move_one.1, 2);
+        assert_eq!(move_one.2, 3);
+
+        assert_eq!(move_two.0, MoveType::Normal);
+        assert_eq!(move_two.1, 0);
+        assert_eq!(move_two.2, 2);
     }
 }
