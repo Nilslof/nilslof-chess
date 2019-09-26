@@ -18,7 +18,7 @@ mod game {
                             match _piece.get_colour() {
                                 Colour::White => {
                                     match _piece.piece_type {
-                                        PieceType::Knight => print!("{}", "Kn ".on_white().black()),
+                                        PieceType::Knight => print!("{} ", "Kn".on_white().black()),
                                         _ => print!("{}  ", format!("{:?}", _piece.piece_type).get(0..1).unwrap().on_white().black())
                                     }
                                 },

@@ -50,21 +50,21 @@ impl Game {
         }
 
         let rook1: Piece = Piece::new(Colour::Black, PieceType::Rook);
-        new_board[0][0] = Option::Some(rook1);
+        new_board[0][7] = Option::Some(rook1);
         let knight1: Piece = Piece::new(Colour::Black, PieceType::Knight);
-        new_board[1][0] = Option::Some(knight1);
+        new_board[1][7] = Option::Some(knight1);
         let bishop1: Piece = Piece::new(Colour::Black, PieceType::Bishop);
-        new_board[2][0] = Option::Some(bishop1);
+        new_board[2][7] = Option::Some(bishop1);
         let queen: Piece = Piece::new(Colour::Black, PieceType::Queen);
-        new_board[3][0] = Option::Some(queen);
+        new_board[3][7] = Option::Some(queen);
         let king: Piece = Piece::new(Colour::Black, PieceType::King);
-        new_board[4][0] = Option::Some(king);
+        new_board[4][7] = Option::Some(king);
         let bishop2: Piece = Piece::new(Colour::Black, PieceType::Bishop);
-        new_board[5][0] = Option::Some(bishop2);
+        new_board[5][7] = Option::Some(bishop2);
         let knight2: Piece = Piece::new(Colour::Black, PieceType::Knight);
-        new_board[6][0] = Option::Some(knight2);
+        new_board[6][7] = Option::Some(knight2);
         let rook2: Piece = Piece::new(Colour::Black, PieceType::Rook);
-        new_board[7][0] = Option::Some(rook2);
+        new_board[7][7] = Option::Some(rook2);
 
         Game {
             board: new_board,
