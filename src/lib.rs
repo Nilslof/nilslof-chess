@@ -781,7 +781,7 @@ impl Game {
     }
 }
 
-#[derive(Copy, Clone, Debug)]
+#[derive(Copy, Clone, Debug, PartialEq)]
 pub enum MoveType {
     Normal,
     Castle,
@@ -834,7 +834,7 @@ impl Colour {
     }
 }
 
-#[derive(Copy, Clone, Debug)]
+#[derive(Copy, Clone, Debug, PartialEq)]
 pub enum PieceType {
     King,
     Queen,
