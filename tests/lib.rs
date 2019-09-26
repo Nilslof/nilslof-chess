@@ -35,13 +35,19 @@ mod game {
         assert_eq!(game.get_turn(), Colour::White);
     }
 
-     #[test]
+    #[test]
     fn get_allowed_moves_pawn() {
         let mut game = Game::new();
 
         let allowed_moves = game.get_allowed_moves(0, 1);
 
         assert_eq!(allowed_moves.len(), 2);
-        assert_eq!(allowed_moves[0].0, MoveType::Normal);
+
+        let move_one = allowed_moves[0];
+        let move_two = allowed_moves[1];
+
+        assert_eq!(move_one.0, MoveType::Normal);
+        assert_eq!(move_one.1, 0);
+        assert_eq!(move_one.1, 2);
     }
 }
