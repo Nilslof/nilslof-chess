@@ -54,4 +54,13 @@ mod game {
         assert_eq!(move_two.1, 0);
         assert_eq!(move_two.2, 2);
     }
+
+    #[test]
+    fn get_allowed_moves_rook() {
+        let mut game = Game::new();
+
+        let allowed_moves = game.get_allowed_moves(0, 0);
+
+        assert_eq!(allowed_moves.len(), 0);
+    }
 }
