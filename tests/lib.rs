@@ -61,6 +61,11 @@ mod game {
 
         let allowed_moves = game.get_allowed_moves(0, 0);
 
+        println!("Initial amount of allowed moves by Rook: {}", allowed_moves.len());
+        for i in 0..allowed_moves.len() {
+            println!("    - Move 1: [ type: {:?}, file: {}, rank: {} ]", allowed_moves[i].0, allowed_moves[i].1, allowed_moves[i].2);
+        }
+
         assert_eq!(allowed_moves.len(), 0);
     }
 }
