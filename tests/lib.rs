@@ -85,7 +85,7 @@ mod game {
 
         println!("Initial amount of allowed moves by Rook: {}", allowed_moves.len());
         for i in 0..allowed_moves.len() {
-            println!("    - Move 1: [ type: {:?}, file: {}, rank: {} ]", allowed_moves[i].0, allowed_moves[i].1, allowed_moves[i].2);
+            println!("    - Move {}: [ type: {:?}, file: {}, rank: {} ]", i, allowed_moves[i].0, allowed_moves[i].1, allowed_moves[i].2);
         }
 
         assert_eq!(allowed_moves.len(), 0);
